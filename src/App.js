@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react'; // 리액트 컴포넌트 생성한다는 의미
+import Hello from './Hello'; // Hello 컴포넌트 불러오기
 import './App.css';
 
 function App() {
+  const name = 'oma';
+
+  const style = {
+    backgroundColor: 'black',
+    color: 'aqua',
+    fontSize: 24, // 기본 단위 px
+    padding: '1rem', // 다른 단위 사용 시 문자열로 설정
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* 리액트에서의 주석 처리 */}
+      <Hello />
+      <Hello color='red' name='react' />
+      <div style={style}>{name}</div>
+      <div className='gray-box'>graybox</div>
+    </>
   );
 }
 
-export default App;
+export default App; // App 이라는 컴포넌트를 내보내겠다는 의미 (다른 컴포넌트에서 불러와 사용 가능)
