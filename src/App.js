@@ -1,5 +1,8 @@
 import React from 'react'; // 리액트 컴포넌트 생성한다는 의미
 import Hello from './Hello'; // Hello 컴포넌트 불러오기
+import Wrapper from './Wrapper';
+import Counter from './Counter';
+import InputSample from './InputSample';
 import './App.css';
 
 function App() {
@@ -13,13 +16,15 @@ function App() {
   };
 
   return (
-    <>
+    <Wrapper>
       {/* 리액트에서의 주석 처리 */}
       <Hello />
-      <Hello color='red' name='react' />
+      <Hello color='red' name='react' isSpecial />
       <div style={style}>{name}</div>
+      <Counter />
       <div className='gray-box'>graybox</div>
-    </>
+      <InputSample />
+    </Wrapper>
   );
 }
 
