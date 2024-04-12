@@ -1,8 +1,10 @@
-import React from 'react'; // 리액트 컴포넌트 생성한다는 의미
+import React, { useRef } from 'react'; // 리액트 컴포넌트 생성한다는 의미
 import Hello from './Hello'; // Hello 컴포넌트 불러오기
 import Wrapper from './Wrapper';
 import Counter from './Counter';
 import InputSample from './InputSample';
+import UserList from './UserList';
+import CreateUser from './CreateUser';
 import './App.css';
 
 function App() {
@@ -15,6 +17,29 @@ function App() {
     padding: '1rem', // 다른 단위 사용 시 문자열로 설정
   };
 
+  // const users = [
+  //   {
+  //     id: 1,
+  //     username: 'velopert',
+  //     email: 'public.velopert@gmail.com',
+  //   },
+  //   {
+  //     id: 2,
+  //     username: 'tester',
+  //     email: 'tester@example.com',
+  //   },
+  //   {
+  //     id: 3,
+  //     username: 'liz',
+  //     email: 'liz@example.com',
+  //   },
+  // ];
+
+  // const nextId = useRef(4);
+  // const onCreate = () => {
+  //   nextId.current += 1;
+  // };
+
   return (
     <Wrapper>
       {/* 리액트에서의 주석 처리 */}
@@ -24,6 +49,9 @@ function App() {
       <Counter />
       <div className='gray-box'>graybox</div>
       <InputSample />
+      {/* <CreateUser /> */}
+      <UserList />
+      {/* <UserList users={users} /> */}
     </Wrapper>
   );
 }
