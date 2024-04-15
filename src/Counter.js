@@ -2,6 +2,10 @@
 import React, { useState } from 'react';
 
 function Counter() {
+  const style = {
+    fontSize: '24px',
+  };
+
   // const numberState = useState(0);
   // const number = numberState[0];
   // const setNumber = numberState[1];
@@ -19,9 +23,13 @@ function Counter() {
 
   return (
     <>
-      <h1>{number}</h1>
-      <button onClick={onDerease}>-1</button>
-      <button onClick={onIncrease}>+1</button>
+      <h1 style={style}>{number}</h1>
+      <button className='btn' onClick={onDerease}>
+        -1
+      </button>
+      <button className='btn' onClick={onIncrease}>
+        +1
+      </button>
     </>
   );
 }

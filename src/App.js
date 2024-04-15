@@ -1,14 +1,14 @@
-import React, { useRef } from 'react'; // 리액트 컴포넌트 생성한다는 의미
+import React, { useRef, useState } from 'react'; // 리액트 컴포넌트 생성한다는 의미
 import Hello from './Hello'; // Hello 컴포넌트 불러오기
 import Wrapper from './Wrapper';
 import Counter from './Counter';
 import InputSample from './InputSample';
 import UserList from './UserList';
 import CreateUser from './CreateUser';
-import './App.css';
+import './styles/App.scss';
 
 function App() {
-  const name = 'oma';
+  const name = 'Lala';
 
   const style = {
     backgroundColor: 'black',
@@ -17,28 +17,41 @@ function App() {
     padding: '1rem', // 다른 단위 사용 시 문자열로 설정
   };
 
-  // const users = [
-  //   {
-  //     id: 1,
-  //     username: 'velopert',
-  //     email: 'public.velopert@gmail.com',
-  //   },
-  //   {
-  //     id: 2,
-  //     username: 'tester',
-  //     email: 'tester@example.com',
-  //   },
-  //   {
-  //     id: 3,
-  //     username: 'liz',
-  //     email: 'liz@example.com',
-  //   },
-  // ];
+  const [inputs, SetInputs] = useState({
+    username: '',
+    email: '',
+  });
+  const { username, email } = inputs;
+  const onChange = (e) => {
+    const { name, value } = e.target;
+    SetInputs({
+      ...inputs,
+      [name]: value,
+    });
+  };
 
-  // const nextId = useRef(4);
-  // const onCreate = () => {
-  //   nextId.current += 1;
-  // };
+  const users = [
+    {
+      id: 1,
+      username: 'velopert',
+      email: 'public.velopert@gmail.com',
+    },
+    {
+      id: 2,
+      username: 'tester',
+      email: 'tester@example.com',
+    },
+    {
+      id: 3,
+      username: 'liz',
+      email: 'liz@example.com',
+    },
+  ];
+
+  const nextId = useRef(4);
+  const onCreate = () => {
+    nextId.current += 1;
+  };
 
   return (
     <Wrapper>
@@ -49,9 +62,8 @@ function App() {
       <Counter />
       <div className='gray-box'>graybox</div>
       <InputSample />
-      {/* <CreateUser /> */}
-      <UserList />
-      {/* <UserList users={users} /> */}
+      <CreateUser />
+      <UserList users={users} />
     </Wrapper>
   );
 }

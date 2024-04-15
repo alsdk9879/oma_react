@@ -1,0 +1,155 @@
+.gray-box {
+  background: gray;
+  width: 64px;
+  height: 64px;
+}
+
+/*
+==========================================================================
+  common
+==========================================================================
+*/
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+       text-size-adjust: 100%;
+  cursor: default;
+  overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+button,
+textarea,
+select,
+a {
+  font-family: inherit;
+  color: inherit;
+  background-color: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+dl,
+li,
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+a,
+button,
+a:hover,
+button:hover,
+a:active,
+button:active,
+a:focus,
+button:focus {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  border: none;
+}
+
+a:active {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+input[type=text],
+input[type=password],
+textarea,
+select,
+button {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*
+* responsive
+*/
+.btn {
+  height: 2rem;
+  padding: 0 1rem;
+  background-color: rgb(71, 155, 180);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}/*# sourceMappingURL=App.css.map */
