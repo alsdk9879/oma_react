@@ -1,8 +1,36 @@
-.btn {
+div,
+input {
+  margin-top: 1rem;
+}
+
+input,
+input[type='text'] {
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 0.5rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+
+  &::placeholder {
+    font-size: 0.875rem;
+  }
+}
+
+button {
+  background-color: #999;
   height: 2rem;
   padding: 0 1rem;
-  background-color: rgb(71, 155, 180);
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
+  color: #fff;
+
+  &.sm {
+    height: 1.5rem;
+    padding: 0 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+.btn {
+  background-color: rgb(71, 155, 180);
 }
