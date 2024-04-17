@@ -1,6 +1,18 @@
 // 리액트 패키지에서 useState 함수 불러오기 / useState : 리액트 훅의 일종, state값 관리를 도와주는 훅. 컴포넌트에서 동적인 값 (=동적인 값 끼얹을 때 사용)
 import React, { useState } from 'react';
 
+// reducer() : 현재 상태와 액션 객체를 파라미터로 받아와서 새로운 상태를 반환해주는 함수
+function reducer(state, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1;
+    case 'DECREMENT':
+      return state - 1;
+    default:
+      return state;
+  }
+}
+
 function Counter() {
   const style = {
     fontSize: '24px',
