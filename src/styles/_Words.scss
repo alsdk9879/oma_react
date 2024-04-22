@@ -1,0 +1,34 @@
+#words {
+  padding: 1rem;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .btn-wrap {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  .list-day {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .table-word {
+    margin-top: 0.5rem;
+
+    .eng {
+      width: 35%;
+    }
+  }
+}
