@@ -1,5 +1,7 @@
 #words {
-  padding: 1rem;
+  padding: 3rem 1rem;
+  max-width: 50rem;
+  margin: 0 auto;
 
   .header {
     display: flex;
@@ -27,8 +29,44 @@
   .table-word {
     margin-top: 0.5rem;
 
-    .eng {
-      width: 35%;
+    tr {
+      &.off {
+        background-color: #eee;
+
+        td {
+          color: #999;
+        }
+      }
     }
+
+    td {
+      &.td-checkbox {
+        width: 10%;
+      }
+
+      &.eng {
+        width: 30%;
+      }
+
+      &.btn-wrap {
+        display: table-cell;
+        width: 30%;
+
+        div:first-child {
+          display: flex;
+          justify-content: center;
+          gap: 0.25rem;
+          flex-wrap: wrap;
+        }
+
+        .btn-mean {
+          min-width: 3.875rem;
+        }
+      }
+    }
+  }
+
+  .btn-delete {
+    background-color: rgb(207, 18, 18);
   }
 }

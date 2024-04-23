@@ -24,3 +24,9 @@ function App() {
 }
 
 export default App;
+
+// REST API
+// Create : POST
+// Read : GET
+// Update : PUT
+// Delete : DELETE
