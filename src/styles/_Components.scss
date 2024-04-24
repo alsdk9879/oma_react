@@ -1,9 +1,21 @@
 // input
+.input-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .text {
+    display: block;
+  }
+}
+
 input,
-input[type='text'] {
+input[type='text'],
+select {
   border: 1px solid rgb(212, 212, 212);
   border-radius: 0.5rem;
-  height: 2rem;
+  height: 2.5rem;
   padding: 0 0.5rem;
 
   &::placeholder {
@@ -50,19 +62,30 @@ input[type='text'] {
 }
 
 // button
-button {
+button,
+.btn {
   background-color: #999;
+  width: fit-content;
   height: 2rem;
   padding: 0 1rem;
   border-radius: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &.sm {
     height: 1.5rem;
     padding: 0 0.5rem;
     font-size: 0.75rem;
+  }
+
+  &.lg {
+    height: 2.5rem;
+    padding: 0 1rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -91,6 +114,19 @@ table {
     .label-checkbox {
       &::before {
         margin-right: 0;
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+@media (max-width: 767.98px) {
+  table {
+    tr {
+      td {
+        padding: 1rem 0.5rem;
       }
     }
   }

@@ -8,8 +8,12 @@ function Header() {
         <Link to={'/'}>영단어</Link>
       </h1>
       <div className='btn-wrap'>
-        <button className='btn'>단어 추가</button>
-        <button className='btn'>Day 추가</button>
+        <Link to={'/create_word'} className='btn'>
+          단어 추가
+        </Link>
+        <Link to={'/create_day'} className='btn'>
+          Day 추가
+        </Link>
       </div>
     </div>
   );

@@ -1,15 +1,64 @@
 {
   "days": [
-    { "id" : 1, "day": 1 },
-    { "id" : 2, "day": 2 },
-    { "id" : 3, "day": 3 }
+    {
+      "id": "1",
+      "day": 1
+    },
+    {
+      "id": "2",
+      "day": 2
+    },
+    {
+      "id": "3",
+      "day": 3
+    },
+    {
+      "id": "acb3",
+      "day": 4
+    }
   ],
   "words": [
-    { "id" : 1, "day": 1, "eng": "apple", "kor": "사과", "isDone": true },
-    { "id" : 2, "day": 1, "eng": "air", "kor": "공기", "isDone": false },
-    { "id" : 3, "day": 2, "eng": "book", "kor": "책", "isDone": false },
-    { "id" : 4, "day": 2, "eng": "banana", "kor": "바나나", "isDone": false },
-    { "id" : 5, "day": 3, "eng": "car", "kor": "자동차", "isDone": false },
-    { "id" : 6, "day": 3, "eng": "cat", "kor": "고양이", "isDone": false }
+    {
+      "id": "1",
+      "day": 1,
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": true
+    },
+    {
+      "id": "3",
+      "day": 2,
+      "eng": "book",
+      "kor": "책",
+      "isDone": true
+    },
+    {
+      "id": "5",
+      "day": 3,
+      "eng": "car",
+      "kor": "자동차",
+      "isDone": false
+    },
+    {
+      "id": "6",
+      "day": 3,
+      "eng": "cat",
+      "kor": "고양이",
+      "isDone": false
+    },
+    {
+      "id": "29de",
+      "day": "1",
+      "eng": "air",
+      "kor": "공기",
+      "isDone": true
+    },
+    {
+      "id": "80d4",
+      "day": "4",
+      "eng": "delete",
+      "kor": "삭제하다",
+      "isDone": false
+    }
   ]
 }
