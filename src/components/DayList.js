@@ -26,6 +26,7 @@ function DayList() {
     <>
       <ul className='list-day'>
         {days.map((day) => (
+          // 반복되는 요소엔 key값을 설정해주어야 오류 없음.
           <li key={day.id} className='btn lg list-day-item'>
             {/* 리액트에서는 <a href=""> 대신 <Link to=""> 사용 */}
             <Link to={`/day/${day.day}`}>Day {day.day}</Link>

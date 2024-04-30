@@ -53,7 +53,7 @@ function Word(props) {
           <input type='checkbox' defaultChecked={isDone} onChange={toggleDone} />
           <span className='label-checkbox'></span>
         </label>
-        <label htmlFor=''></label>
+        {/* <label htmlFor=''></label> */}
       </td>
       <td className='eng'>{word.eng}</td>
       <td className='kor'>{isShow && word.kor}</td>
