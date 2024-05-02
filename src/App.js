@@ -11,7 +11,7 @@ import CreateDay from './components/CreateDay';
 function App() {
   return (
     // JSX : Javascript 내부에 HTML 처럼 작성하는 것.
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div id='words'>
         <div className='container'>
           <Header />
