@@ -3,7 +3,7 @@ import './styles/App.scss';
 import Header from './components/Header';
 import DayList from './components/DayList';
 import Day from './components/Day';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import EmptyPage from './components/EmptyPage';
 import CreateWord from './components/CreateWord';
 import CreateDay from './components/CreateDay';
@@ -11,7 +11,7 @@ import CreateDay from './components/CreateDay';
 function App() {
   return (
     // JSX : Javascript 내부에 HTML 처럼 작성하는 것.
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div id='words'>
         <div className='container'>
           <Header />
@@ -26,7 +26,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

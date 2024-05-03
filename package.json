@@ -21,6 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-server": "json-server --watch ./src/db/data.json --port 3002 --host localhost",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "homepage": "https://alsdk9879.github.io/oma_react/",
